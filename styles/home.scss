@@ -10,9 +10,11 @@ body{
 
 %slide{
     width:100%;
-    height:100vh;
-    background-color:blue;
+    height:95vh;
+    background-color:white;
     display: inline-block;   
+    position: relative;
+    min-height: 650px;
     .cell{
         position:absolute;
         top:0;
@@ -21,13 +23,18 @@ body{
         left:0;
         height:500px;
         margin:auto;
-        padding-left: 65px;
+        padding: 0 65px;
     }
 }
 
 .la{
     @extend %slide;
     background-image: url(images/la.jpg);
+}
+
+.bio{
+    @extend %slide;
+
 }
 
 .marker{
@@ -44,3 +51,55 @@ body{
     color: #1b1a6d;
     margin-top: 0;
 }
+
+.bio-text{
+    float: left;
+    width: 45%;
+    font-size: 26px;
+    line-height: 47px;
+    padding: 100px 0;
+}
+
+.portrait{
+    float: right;
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: -16px 11px #ffc477;
+}
+
+.contact{
+    font-size: 30px;
+    text-align: center;
+    box-shadow: inset 0px -13px 12px #ffc477;
+    padding: 200px 0px 100px;
+    h2{
+        font-size:60px;
+        padding-bottom: 80px;
+        text-shadow: 7px 4px 0px #ffc477;
+    }
+    a{
+        color:#1b1a6d;
+        font-size: 70px;
+        &:hover{
+            color: #ffc477;
+        }
+    }
+}
+
+.git{
+    width: 30%;
+    display: inline-block;
+}
+
+.linkedin{
+    width: 30%;
+    display: inline-block;
+
+}
+
+.email{
+    width: 30%;
+    display: inline-block;
+
+}
+
